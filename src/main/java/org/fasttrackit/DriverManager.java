@@ -14,10 +14,10 @@ public class DriverManager {
     public static WebDriver initDriver(String browser) {
         switch (browser.toLowerCase()) {
             default:
-                System.out.println("Creating default driver for Chrome...");
+                System.out.println("Creating default driver for IE...");
             case "chrome":
 //                if (System.getProperty("os.name").toLowerCase().contains("windows"))
-                System.setProperty("webdriver.chrome.driver",
+                System.setProperty("webdriver.ie.driver",
                         AppConfig.getChromeDriverPath());
                 driver = new ChromeDriver();
                 break;
